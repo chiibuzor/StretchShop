@@ -156,11 +156,11 @@ services:
       - "27017:27017"
     command: mongod --auth
 
-  nats-server:
-    image: nats
-    entrypoint: "/gnatsd -D --user defaultUsername --pass defaultPassword" # -D debug , -V trace
-    ports:
-      - "4222:4222"
+  #nats-server:
+  #  image: nats
+  #  entrypoint: "/gnatsd -D --user defaultUsername --pass defaultPassword" # -D debug , -V trace
+  #  ports:
+  #    - "4222:4222"
 
   traefik:
     image: traefik:1.7
